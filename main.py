@@ -51,12 +51,12 @@ def show_partial_demo(epd):
 def main():
     epd = EPD420(
         spi_bus=2,
-        sck_pin=18,
-        mosi_pin=23,
-        cs_pin=5,
-        dc_pin=17,
-        rst_pin=16,
-        busy_pin=4,
+        sck_pin=18,     # Yes
+        mosi_pin=23,    # Yes
+        cs_pin=5,       # Yes
+        dc_pin=16,      # Yes
+        rst_pin=17,     # Yes
+        busy_pin=4,     # Yes
     )
 
     if not epd.init():
