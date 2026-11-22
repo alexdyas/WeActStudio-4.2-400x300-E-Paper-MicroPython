@@ -32,7 +32,16 @@ def show_partial_demo(epd):
     box_w = 70
     box_h = 20
 
+    print("My rectangle here")
+    fb.fill(0)
+    fb.fill_rect(0,0,50,50,1)
+    epd.display_partial()
+    time.sleep_ms(500)
+    print("End of my rectangle")
+
+    print("11111111111111")
     for step in range(1, 11):
+        # Draw a box over the previous number to clear that portion of the screen
         fb.fill(1)
         fb.fill_rect(box_x, box_y, box_w, box_h, 1)
         fb.text("fast partial", 90, 20, 0)

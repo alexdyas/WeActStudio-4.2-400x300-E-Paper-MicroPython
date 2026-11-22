@@ -2,6 +2,11 @@
 
 ** My forked version **
 
+## Reading
+MicroPython framebuffer https://docs.micropython.org/en/latest/library/framebuf.html
+
+# Original
+
 A MicroPython implementation for the WeAct Studio 4.2" (400×300) black & white
 e-paper module with SSD1683 controller. This demo achieves a similar visual
 result as the Arduino example, but runs on MicroPython-compatible
